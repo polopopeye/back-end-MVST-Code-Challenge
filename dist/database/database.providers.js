@@ -16,9 +16,14 @@ exports.databaseProviders = [
                 password,
                 database,
                 entities: [__dirname + '/../**/*.entity{.ts,.js}'],
-                synchronize: false,
+                synchronize: true,
+                url: process.env.DATABASE_URL,
+                logging: true,
+                ssl: true,
                 extra: {
-                    ssl: true,
+                    ssl: {
+                        rejectUnauthorized: false,
+                    },
                 },
             });
             return connection;
