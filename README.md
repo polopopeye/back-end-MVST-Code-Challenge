@@ -56,3 +56,13 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+    "start": "nest start",
+
+cambiado
+por
+"start": "nest start",
+
+        "start": "node dist/main",
+
+        antes start:prod
