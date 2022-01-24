@@ -6,8 +6,8 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "nest build",
+    "prebuild": "echo \" no prebuild necesary for backend \" && exit 0",
+    "build": "echo \" no build necesary for backend \" && exit 0",
     "start": "node --experimental-modules ./distro2/main.js"
   },
   "dependencies": {
