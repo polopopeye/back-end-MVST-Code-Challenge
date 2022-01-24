@@ -18,6 +18,11 @@ export const databaseProviders = [
         database,
         entities: [__dirname + '/../**/*.entity{.ts,.js}'],
         synchronize: true,
+        url: process.env.DATABASE_URL,
+        ssl: true,
+        extra: {
+          ssl: true,
+        },
       });
       return connection;
     },
